@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apresentation", "Apresentation", "{E7DD5497-69EF-4B22-B488-6774F36BE8AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{57AF543B-794E-4829-A8B2-CDF82068FDBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSLumiNET.Infrastructure", "GSLumiNET.Infrastructure\GSLumiNET.Infrastructure.csproj", "{98824975-72DD-48E6-8C82-989171A504DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{B29AAE3E-104C-4DEE-BAA2-37BAF1039479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSLumiNET.Domain", "GSLumiNET.Domain\GSLumiNET.Domain.csproj", "{43AD3F83-991B-4E9C-8931-6600D1948D95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CA148938-EBE0-426C-88A7-87CFFA31C325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSLumiNET.Application", "GSLumiNET.Application\GSLumiNET.Application.csproj", "{B1D33C3C-6DBA-47C9-A529-28535F1059E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSLumiNET.API", "GSLumiNET.API\GSLumiNET.API.csproj", "{0715DB57-22B8-4FD3-B73D-84EC3BAB4414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98824975-72DD-48E6-8C82-989171A504DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98824975-72DD-48E6-8C82-989171A504DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98824975-72DD-48E6-8C82-989171A504DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98824975-72DD-48E6-8C82-989171A504DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43AD3F83-991B-4E9C-8931-6600D1948D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43AD3F83-991B-4E9C-8931-6600D1948D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43AD3F83-991B-4E9C-8931-6600D1948D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43AD3F83-991B-4E9C-8931-6600D1948D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D33C3C-6DBA-47C9-A529-28535F1059E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D33C3C-6DBA-47C9-A529-28535F1059E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D33C3C-6DBA-47C9-A529-28535F1059E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D33C3C-6DBA-47C9-A529-28535F1059E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0715DB57-22B8-4FD3-B73D-84EC3BAB4414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0715DB57-22B8-4FD3-B73D-84EC3BAB4414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0715DB57-22B8-4FD3-B73D-84EC3BAB4414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0715DB57-22B8-4FD3-B73D-84EC3BAB4414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{98824975-72DD-48E6-8C82-989171A504DC} = {57AF543B-794E-4829-A8B2-CDF82068FDBA}
+		{43AD3F83-991B-4E9C-8931-6600D1948D95} = {B29AAE3E-104C-4DEE-BAA2-37BAF1039479}
+		{B1D33C3C-6DBA-47C9-A529-28535F1059E8} = {CA148938-EBE0-426C-88A7-87CFFA31C325}
+		{0715DB57-22B8-4FD3-B73D-84EC3BAB4414} = {E7DD5497-69EF-4B22-B488-6774F36BE8AB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {982B62CD-3774-423B-ABAE-2E3CD01D1A85}
+	EndGlobalSection
+EndGlobal

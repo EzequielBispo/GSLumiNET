@@ -1,0 +1,6 @@
+@GSLumiNET.API_HostAddress = http://localhost:5063
+
+GET {{GSLumiNET.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
