@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GSLumiNET.Domain.Entities;
+using GSLumiNET.Domain.Interfaces;
 using System.Threading.Tasks;
 
 namespace GSLumiNET.Application.Services
