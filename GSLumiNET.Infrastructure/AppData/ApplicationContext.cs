@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GSLumiNET.Infrastructure.AppData
 {
-    internal class ApplicationContext
+    internal class ApplicationContext : DbContext
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
