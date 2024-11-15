@@ -15,5 +15,15 @@ namespace GSLumiNET.Application.Services
         {
             _repository = repository;
         }
+
+        public RegistroEntity EditarRegistro(RegistroEntity entity)
+        {
+            return _repository.EditarRegistro(entity);
+        }
+
+        public RegistroEntity AdicionarRegistro(RegistroEntity entity)
+        {
+            return _repository.AdicionarRegistro(entity);
+        }
     }
 }
