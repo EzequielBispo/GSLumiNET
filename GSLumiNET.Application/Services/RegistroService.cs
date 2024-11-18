@@ -19,22 +19,25 @@ namespace GSLumiNET.Application.Services
 
         public RegistroEntity EditarRegistro(RegistroEntity entity)
         {
-            return _repository.EditarRegistro(entity);
+            return _repository.Editar(entity);
         }
 
         public RegistroEntity AdicionarRegistro(RegistroEntity entity)
         {
-            return _repository.AdicionarRegistro(entity);
+            return _repository.Adicionar(entity);
         }
 
-        public RegistroEntity ObterRegistroPorId(RegistroEntity entity)
+        public RegistroEntity ObterPorId(int id)
         {
-            return _repository.ObterRegistroPorId(entity);
+            return _repository.ObterPorId(id);
         }
-        public RegistroEntity RemoverRegistro(RegistroEntity entity)
+        public RegistroEntity RemoverRegistro(int id)
         {
-            return _repository.RemoverRegistro(entity);
+            return _repository.Remover(id);
         }
-
+        public IEnumerable<RegistroEntity> ObterTodos()
+        {
+            return _repository.ObterTodos();
+        }
     }
 }
