@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using GSLumiNET.Domain.Interfaces;
 using System.Threading.Tasks;
+using GSLumiNET.Domain.Entities;
 
 namespace GSLumiNET.Application.Services
 {
@@ -15,5 +16,25 @@ namespace GSLumiNET.Application.Services
         {
             _repository = repository;
         }
+
+        public RegistroEntity EditarRegistro(RegistroEntity entity)
+        {
+            return _repository.EditarRegistro(entity);
+        }
+
+        public RegistroEntity AdicionarRegistro(RegistroEntity entity)
+        {
+            return _repository.AdicionarRegistro(entity);
+        }
+
+        public RegistroEntity ObterRegistroPorId(RegistroEntity entity)
+        {
+            return _repository.ObterRegistroPorId(entity);
+        }
+        public RegistroEntity RemoverRegistro(RegistroEntity entity)
+        {
+            return _repository.RemoverRegistro(entity);
+        }
+
     }
 }
