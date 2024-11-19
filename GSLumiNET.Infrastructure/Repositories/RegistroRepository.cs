@@ -16,35 +16,35 @@ namespace GSLumiNET.Infrastructure.Repositories
 
         public RegistroEntity? Adicionar(RegistroEntity registro)
         {
-            _context.Registro.Add(registro);
-            _context.SaveChanges();
+            context.Registro.Add(registro);
+            context.SaveChanges();
             return registro;
         }
 
         public RegistroEntity? Editar(RegistroEntity registro)
         {
-            _context.Registro.Update(registro);
-            _context.SaveChanges();
+            context.Registro.Update(registro);
+            context.SaveChanges();
             return registro;
         }
 
         public RegistroEntity? ObterPorId(int id) 
         {
-            return _context.Registro.Find(id);
+            return context.Registro.Find(id);
         }
 
         public IEnumerable<RegistroEntity>? ObterTodos()
         {
-            return _context.Registro.ToList();
+            return context.Registro.ToList();
         }
 
         public RegistroEntity? Remover(int id)
         {
-            var registro = _context.Registro.Find(id);
+            var registro = context.Registro.Find(id);
             if (registro != null)
             {
-                _context.Registro.Remove(registro);
-                _context.SaveChanges();
+                context.Registro.Remove(registro);
+                context.SaveChanges();
             }
             return registro;
         }
