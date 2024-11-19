@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GSLumiNET.Domain.Entities;
+using GSLumiNET.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using GSLumiNET.Infrastructure.AppData;
 
 namespace GSLumiNET.Infrastructure.Repositories
 {
-    public class RegistroRepository : IRegistroRepository
+    public class RegistroRepository(ApplicationContext context) : IRegistroRepository
     {
         private readonly ApplicationContext _context;
-
-        public RegistroRepository(ApplicationContext context)
-        {
-            _context = context;
-        } 
 
         public RegistroEntity? Adicionar(RegistroEntity registro)
         {
@@ -45,7 +43,7 @@ namespace GSLumiNET.Infrastructure.Repositories
             var registro = _context.Registro.Find(id);
             if (registro != null)
             {
-                _context.Barco.Remove(registro);
+                _context.Registro.Remove(registro);
                 _context.SaveChanges();
             }
             return registro;
