@@ -12,7 +12,7 @@ namespace GSLumiNET.Infrastructure.Repositories
 {
     public class RegistroRepository(ApplicationContext context) : IRegistroRepository
     {
-        private readonly ApplicationContext _context;
+        private readonly ApplicationContext? _context;
 
         public RegistroEntity? Adicionar(RegistroEntity registro)
         {
