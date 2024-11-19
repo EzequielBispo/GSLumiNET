@@ -1,4 +1,6 @@
 using GSLumiNET.Application.Services;
+using GSLumiNET.Domain.Interfaces;
+using GSLumiNET.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<RegistroService>();
+builder.Services.AddScoped<IRegistroRepository, RegistroRepository>();
 
 var app = builder.Build();
 
