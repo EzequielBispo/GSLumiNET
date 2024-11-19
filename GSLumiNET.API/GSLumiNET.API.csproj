@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GSLumiNET.Application\GSLumiNET.Application.csproj" />
+    <ProjectReference Include="..\GSLumiNET.Infrastructure\GSLumiNET.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
