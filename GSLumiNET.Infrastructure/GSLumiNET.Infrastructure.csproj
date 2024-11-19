@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GSLumiNET.Domain\GSLumiNET.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
