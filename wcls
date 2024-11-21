@@ -1,0 +1,131 @@
+[33mcommit 92b63b3512b5a813890042092b040e570fdecbf0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Mon Nov 18 20:07:38 2024 -0300
+
+    Alterações nos métodos da camada service.
+
+[33mcommit b39631af172e741945622b9335943db6b34d3884[m
+Merge: 9648843 3e69dc3
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Mon Nov 18 19:58:53 2024 -0300
+
+    Merge branch 'Application'
+
+[33mcommit 9648843d5295665760d299c7025678d37f3d4cc0[m
+Merge: 87cc047 da395f5
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Mon Nov 18 19:57:47 2024 -0300
+
+    Merge branch 'Domain'
+
+[33mcommit da395f55e1bb2d12b7f004b6607f48fd6156704f[m[33m ([m[1;32mDomain[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Mon Nov 18 19:57:08 2024 -0300
+
+    Implementação da Interface IRegistroRepository.
+
+[33mcommit 3e69dc317cf1b5814415dc9dde24a0dfd60f16f4[m[33m ([m[1;32mApplication[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Mon Nov 18 19:50:32 2024 -0300
+
+    Métodos da camada Service implementados.
+
+[33mcommit 9113b3dd7a580be0dd1ea671be9bd3f32e403e93[m
+Merge: d6aeb8f 7104d63
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Thu Nov 14 21:21:47 2024 -0300
+
+    Merge branch 'Domain' into Application
+
+[33mcommit d6aeb8fb02146d0263455a4875ff0e8e87bbae70[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Thu Nov 14 21:19:22 2024 -0300
+
+    Métodos EditarRegistro e AdicionarRegistro implementados na camada Service.
+
+[33mcommit 87cc047e0db4cf13fbd2f8ad0dee47bf6c8db1a3[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 674c842 8ce760c
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:16:17 2024 -0300
+
+    Merge branch 'Infrastructure'
+
+[33mcommit 674c84259fef381600ea0bdf9293a3670e5fcdeb[m
+Merge: fc012ab 7104d63
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:16:08 2024 -0300
+
+    Merge branch 'Domain'
+
+[33mcommit 7104d63839db3c4532c64c7d389ebf53fda12ed8[m[33m ([m[1;31morigin/Domain[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:15:27 2024 -0300
+
+    Implementação da interface RegistroService.
+
+[33mcommit fc012ab3b6096ba6eb2dddd7c9b34a4ec68e0fdf[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:13:20 2024 -0300
+
+    Alteração na dependência da camada Domain.
+
+[33mcommit 1c767d7ac3c930373f2c8e1be53e91ccb45ecf0d[m
+Merge: 3863314 c8a8d8d
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:10:00 2024 -0300
+
+    Merge branch 'Domain' into Application
+
+[33mcommit c8a8d8d5b5b330d5d75ac2039d3d4b75ed86a8e3[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:08:32 2024 -0300
+
+    Implementação da interface da classe RegistroRepository.
+
+[33mcommit 8ce760cc6dcaf825b903fe1a3ee72205367d0fd0[m[33m ([m[1;32mInfrastructure[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:05:01 2024 -0300
+
+    Alterações de implementação da classe ApplicationContext
+
+[33mcommit c3fde3da988e96db5f6160c4e280b58554370ece[m[33m ([m[1;31morigin/Infrastructure[m[33m)[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 22:01:27 2024 -0300
+
+    Implementação da classe ApplicationContext.
+
+[33mcommit f3d0b9af17ef0720af046d3f8b40da2461270cda[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 21:58:45 2024 -0300
+
+    Implementação da classe Repository com todos métodos.
+
+[33mcommit 3863314ac50534c0acc5f0dfa2dc63d29ef6b88c[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 21:46:09 2024 -0300
+
+    Implementação da classe RegistroService sem métodos.
+
+[33mcommit db466a35c18ef57b740bee8c38b80dfd6a170780[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 21:33:02 2024 -0300
+
+    Classe RegistroEntity e RegistroDTO implementadas.
+
+[33mcommit c75615ca2df8449dd1a892b26c008b950bee212b[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 20:49:12 2024 -0300
+
+    Exclusão do arquivo de classe inicial.
+
+[33mcommit 880c7f8852d479acbb0ca30e7f705ceb4a725d68[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 20:06:49 2024 -0300
+
+    Estrutura de pastas e soluções do projeto.
+
+[33mcommit 0646411a8eca511ee82dbfbecf42e728ad2d7188[m
+Author: Ezequiel Bispo de Jesus <ezequiel.bispo@kyndryl.com>
+Date:   Tue Nov 12 20:04:28 2024 -0300
+
+    first commit
