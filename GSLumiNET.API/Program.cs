@@ -6,20 +6,24 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Adicionar serviços ao contêiner.
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Configuração do Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<RegistroService>();
+
+// Registrar o DbContext
 builder.Services.AddDbContext<ApplicationContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Registrar Repositórios e Serviços
 builder.Services.AddScoped<IRegistroRepository, RegistroRepository>();
+builder.Services.AddScoped<IRegistroService, RegistroService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuração do pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -31,4 +35,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-    

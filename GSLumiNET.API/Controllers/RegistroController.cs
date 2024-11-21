@@ -2,6 +2,7 @@
 using GSLumiNET.Application.Services;
 using GSLumiNET.Domain.Entities;
 using System.Collections.Generic;
+using GSLumiNET.Domain.Interfaces;
 
 namespace GSLumiNET.API.Controllers
 {
@@ -9,9 +10,9 @@ namespace GSLumiNET.API.Controllers
     [Route("api/[controller]")]
     public class RegistroController : ControllerBase
     {
-        private readonly RegistroService _registroService;
+        private readonly IRegistroService _registroService;
 
-        public RegistroController(RegistroService registroService)
+        public RegistroController(IRegistroService registroService)
         {
             _registroService = registroService;
         }

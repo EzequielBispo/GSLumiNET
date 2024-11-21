@@ -11,15 +11,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
-    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.6.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GSLumiNET.Application\GSLumiNET.Application.csproj" />
-    <ProjectReference Include="..\GSLumiNET.Domain\GSLumiNET.Domain.csproj" />
-    <ProjectReference Include="..\GSLumiNET.Infrastructure\GSLumiNET.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
