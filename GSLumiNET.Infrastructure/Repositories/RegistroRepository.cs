@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using GSLumiNET.Domain.Entities;
 using GSLumiNET.Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
 using GSLumiNET.Infrastructure.AppData;
 
 namespace GSLumiNET.Infrastructure.Repositories
