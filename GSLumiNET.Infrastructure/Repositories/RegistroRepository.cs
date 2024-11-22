@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using GSLumiNET.Domain.Entities;
 using GSLumiNET.Domain.Interfaces;
@@ -15,34 +14,34 @@ namespace GSLumiNET.Infrastructure.Repositories
 
         public RegistroRepository(ApplicationContext context)
         {
-            _context = context;
-        } 
+            _context = context ?? throw new ArgumentNullException(nameof(context));
+        }
 
-        public RegistroEntity? Adicionar(RegistroEntity registro)
+        public RegistroEntity Adicionar(RegistroEntity registro)
         {
             _context.Registro.Add(registro);
             _context.SaveChanges();
             return registro;
         }
 
-        public RegistroEntity? Editar(RegistroEntity registro)
+        public RegistroEntity Editar(RegistroEntity registro)
         {
             _context.Registro.Update(registro);
             _context.SaveChanges();
             return registro;
         }
 
-        public RegistroEntity? ObterPorId(int id) 
+        public RegistroEntity ObterPorId(int id)
         {
             return _context.Registro.Find(id);
         }
 
-        public IEnumerable<RegistroEntity>? ObterTodos()
+        public IEnumerable<RegistroEntity> ObterTodos()
         {
             return _context.Registro.ToList();
         }
 
-        public RegistroEntity? Remover(int id)
+        public RegistroEntity Remover(int id)
         {
             var registro = _context.Registro.Find(id);
             if (registro != null)
