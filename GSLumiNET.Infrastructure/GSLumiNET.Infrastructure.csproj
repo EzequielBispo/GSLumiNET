@@ -19,4 +19,8 @@
     <ProjectReference Include="..\GSLumiNET.Domain\GSLumiNET.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories/" />
+  </ItemGroup>
+
 </Project>
