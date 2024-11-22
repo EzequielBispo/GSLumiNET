@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using GSLumiNET.Infrastructure.AppData;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace GSLumiNET.IoC
+{
+    public class Bootstrap
+    {
+        public static void Start(IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<ApplicationContext>(x => {
+                x.UseOracle(configuration["ConnectionStrings:Oracle"]);
+            });
+
+
+        }
+
+    }
+}
