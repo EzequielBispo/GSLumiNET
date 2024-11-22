@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using GSLumiNET.Domain.Entities;
 using GSLumiNET.Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
 using GSLumiNET.Infrastructure.AppData;
 
 namespace GSLumiNET.Infrastructure.Repositories
@@ -43,8 +42,8 @@ namespace GSLumiNET.Infrastructure.Repositories
             var registro = context.Registro.Find(id);
             if (registro != null)
             {
-                context.Registro.Remove(registro);
-                context.SaveChanges();
+                _context.Registro.Remove(registro);
+                _context.SaveChanges();
             }
             return registro;
         }
