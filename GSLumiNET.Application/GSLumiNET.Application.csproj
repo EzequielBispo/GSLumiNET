@@ -10,4 +10,8 @@
     <ProjectReference Include="../GSLumiNET.Domain/GSLumiNET.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="4.0.0" />
+  </ItemGroup>
+
 </Project>
