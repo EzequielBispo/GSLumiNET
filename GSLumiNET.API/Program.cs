@@ -14,7 +14,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<RegistroService>();
 builder.Services.AddDbContext<ApplicationContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<IRegistroRepository, RegistroRepository>();
 
 var app = builder.Build();
