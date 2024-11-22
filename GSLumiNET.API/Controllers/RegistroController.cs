@@ -2,6 +2,7 @@
 using GSLumiNET.Application.Services;
 using GSLumiNET.Domain.Entities;
 using System.Collections.Generic;
+using GSLumiNET.Application.MLModels;
 
 namespace GSLumiNET.API.Controllers
 {
@@ -10,6 +11,7 @@ namespace GSLumiNET.API.Controllers
     public class RegistroController : ControllerBase
     {
         private readonly RegistroService _registroService;
+        private readonly Predicao _predicao;
 
         public RegistroController(RegistroService registroService)
         {
@@ -73,6 +75,17 @@ namespace GSLumiNET.API.Controllers
             }
 
             return Ok($"Registro com ID {id} removido com sucesso.");
+        }
+        [HttpPost("previsao")]
+        public IActionResult PreverILampada([FromBody] DadosEntrada entrada)
+        {
+            if (entrada == null)
+            {
+                return BadRequest("Os dados de entrada são inválidos.");
+            }
+
+            var resultado = _predicao.FazerPredicao(entrada);
+            return Ok(new { ILampada = resultado });
         }
     }
 }
