@@ -1,5 +1,6 @@
 ﻿namespace GSLumiNET.ML;
 using Microsoft.ML;
+using GSLumiNET.Application.MLModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,7 @@ public class ModeloMachineLearning
             IInterna = 3.0f
         };
 
-        var predicaoFunc = mlContext.Model.CreatePredictionFunction<DadosEntrada, DadosSaida>(modelo);
+        var predicaoFunc = mlContext.Model.CreatePredictionEngine<DadosEntrada, DadosSaida>(modelo);
 
         var resultado = predicaoFunc.Predict(dadosParaPredicao);
         Console.WriteLine($"Predição para ILampada: {resultado.ILampada}");
