@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GSLumiNET.Domain.Interfaces
 {
-    internal class IRegistroRepository
+    public interface IRegistroRepository
     {
     }
 }
