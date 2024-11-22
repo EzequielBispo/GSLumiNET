@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GSLumiNET.Domain.Entities;
+using GSLumiNET.Domain.Interfaces;
+using GSLumiNET.Infrastructure.AppData;
 
 namespace GSLumiNET.Infrastructure.Repositories
 {
@@ -45,7 +47,7 @@ namespace GSLumiNET.Infrastructure.Repositories
             var registro = _context.Registro.Find(id);
             if (registro != null)
             {
-                _context.Barco.Remove(registro);
+                _context.Registro.Remove(registro);
                 _context.SaveChanges();
             }
             return registro;
